@@ -43,41 +43,41 @@ To generate a statsgrid, you need several things:
 
 Here is a sample code base:
 
+```php
+// Let's define the data to be displayed (usually, you will get this from a database using GROUP BY statements)
+$data = array(
+	array("country"=>"US", "city"=>"Chicago", "year"=>2009, "month"=>"February", "CA"=>12, "Benef"=>2),	
+	array("country"=>"US", "city"=>"Chicago", "year"=>2009, "month"=>"April", "CA"=>12, "Benef"=>2),	
+	array("country"=>"US", "city"=>"NY", "year"=>2009, "month"=>"May", "CA"=>15, "Benef"=>5),
+	array("country"=>"US", "city"=>"Baltimore", "year"=>2009, "month"=>"April", "CA"=>42, "Benef"=>3),
+	array("country"=>"US", "city"=>"Baltimore", "year"=>2010, "month"=>"April", "CA"=>24, "Benef"=>4),
+	array("country"=>"FR", "city"=>"Paris", "year"=>2010, "month"=>"May", "CA"=>12, "Benef"=>2),
+	array("country"=>"FR", "city"=>"Paris", "year"=>2010, "month"=>"June", "CA"=>12, "Benef"=>2),	
+);
 
-	// Let's define the data to be displayed (usually, you will get this from a database using GROUP BY statements)
-	$data = array(
-		array("country"=>"US", "city"=>"Chicago", "year"=>2009, "month"=>"February", "CA"=>12, "Benef"=>2),	
-		array("country"=>"US", "city"=>"Chicago", "year"=>2009, "month"=>"April", "CA"=>12, "Benef"=>2),	
-		array("country"=>"US", "city"=>"NY", "year"=>2009, "month"=>"May", "CA"=>15, "Benef"=>5),
-		array("country"=>"US", "city"=>"Baltimore", "year"=>2009, "month"=>"April", "CA"=>42, "Benef"=>3),
-		array("country"=>"US", "city"=>"Baltimore", "year"=>2010, "month"=>"April", "CA"=>24, "Benef"=>4),
-		array("country"=>"FR", "city"=>"Paris", "year"=>2010, "month"=>"May", "CA"=>12, "Benef"=>2),
-		array("country"=>"FR", "city"=>"Paris", "year"=>2010, "month"=>"June", "CA"=>12, "Benef"=>2),	
-	);
-	
-	// Let's create the instance
-	$grid = new StatsGrid();
-	// We define 2 rows: COUNTRY and CITY
-	$grid->setRows(array(
-		new StatsColumnDescriptor("country"),	
-		new StatsColumnDescriptor("city")	
-	));
-	// We define 2 columns: YEAR and MONTHS
-	$grid->setColumns(array(
-			new StatsColumnDescriptor("year"),
-			new StatsColumnDescriptor("month")
-	));
-	// We define 2 values: CA and Benef
-	$grid->setValues(array(
-		new StatsValueDescriptor("CA", "CA"),
-		new StatsValueDescriptor("Benef", "Be."),		
-	));
-	// We set the data
-	$grid->setData($data);
-	
-	// We print the table
-	$grid->toHtml();
+// Let's create the instance
+$grid = new StatsGrid();
+// We define 2 rows: COUNTRY and CITY
+$grid->setRows(array(
+	new StatsColumnDescriptor("country"),	
+	new StatsColumnDescriptor("city")	
+));
+// We define 2 columns: YEAR and MONTHS
+$grid->setColumns(array(
+		new StatsColumnDescriptor("year"),
+		new StatsColumnDescriptor("month")
+));
+// We define 2 values: CA and Benef
+$grid->setValues(array(
+	new StatsValueDescriptor("CA", "CA"),
+	new StatsValueDescriptor("Benef", "Be."),		
+));
+// We set the data
+$grid->setData($data);
 
+// We print the table
+$grid->toHtml();
+```
 
 Adding aggregation (sums/means...):
 -----------------------------------
@@ -87,11 +87,13 @@ StatsGrid let's you *aggregate* data (performing sums/means...) on any column or
 
 In order to aggregate data, you just need to call the addAggregator method and pass a valid aggregator object.
 
-	// Let's add 4 aggregators (sub and subsums on columns and on rows)
-	$grid->addAggregator(new SumAggregator($countryRow, $salesValue, "Total Sales"));
-	$grid->addAggregator(new SumAggregator($cityRow, $salesValue, "Total city"));
-	$grid->addAggregator(new SumAggregator($monthColumn, $salesValue, "Total month"));
-	$grid->addAggregator(new SumAggregator($yearColumn, $salesValue, "Total year"));
+```php
+// Let's add 4 aggregators (sub and subsums on columns and on rows)
+$grid->addAggregator(new SumAggregator($countryRow, $salesValue, "Total Sales"));
+$grid->addAggregator(new SumAggregator($cityRow, $salesValue, "Total city"));
+$grid->addAggregator(new SumAggregator($monthColumn, $salesValue, "Total month"));
+$grid->addAggregator(new SumAggregator($yearColumn, $salesValue, "Total year"));
+```
  
 In the sample above we decide we want to sum data by country/city and year/month.
 Therefore, we create 4 SumAggregator objects.
@@ -121,4 +123,12 @@ By just adding those 4 lines, we will get this:
 </tr><tr>
 <td class='header row0'>Total Sales</td><td></td><td class='aggregate0 value roweven columneven'>12</td><td class='aggregate0 value rowodd columneven'>54</td><td class='aggregate0 value roweven columneven'>15</td><td class='aggregate1 value rowodd columneven'>81</td><td class='aggregate0 value roweven columneven'>24</td><td class='aggregate0 value rowodd columneven'>12</td><td class='aggregate0 value roweven columneven'>12</td><td class='aggregate1 value rowodd columneven'>48</td><td class='aggregate0 value roweven columneven'>129</td>
 </tr></table>
+
+Styling statsgrids:
+-------------------
+
+Statsgrid comes with a default CSS stylesheet.
+You can find it in css/dist/statsgrid.css.
+
+
 
