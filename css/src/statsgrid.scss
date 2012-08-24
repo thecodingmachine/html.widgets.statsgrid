@@ -1,0 +1,84 @@
+
+@mixin baseTable($gridClass, $mainColor) {
+	table.#{$gridClass} {
+		td.header.column0 {
+			@include cell-color($mainColor, 0%)
+		}
+		td.header.column1 {
+			@include cell-color($mainColor, 10%)
+		}
+		td.header.column2 {
+			@include cell-color($mainColor, 20%)
+		}
+		td.header.column3 {
+			@include cell-color($mainColor, 30%)
+		}
+		td.header.column4 {
+			@include cell-color($mainColor, 40%)
+		}
+		
+		td.header.row0 {
+			@include cell-color($mainColor, 0%)
+		}
+		td.header.row1 {
+			@include cell-color($mainColor, 10%)
+		}
+		td.header.row2 {
+			@include cell-color($mainColor, 20%)
+		}
+		td.header.row3 {
+			@include cell-color($mainColor, 30%)
+		}
+		td.header.row4 {
+			@include cell-color($mainColor, 40%)
+		}
+		
+		td.header {
+			text-align: center;
+			font-weight: bold;
+		}
+		td.value {
+			text-align: right;
+		}
+		@include values-color("value", $mainColor, 66%);
+		@include values-color("aggregate3", $mainColor, 61%);
+		@include values-color("aggregate4", $mainColor, 56%);
+		@include values-color("aggregate1", $mainColor, 51%);
+		@include values-color("aggregate0", $mainColor, 41%);
+	}
+}
+
+@mixin values-color($className, $mainColor, $percent) {
+	td.#{$className}.roweven.columneven {
+		@include cell-color($mainColor, $percent)
+	}
+	td.#{$className}.roweven.columnodd {
+		@include cell-color($mainColor, $percent+6%)
+	}
+	td.#{$className}.rowodd.columneven {
+		@include cell-color($mainColor, $percent+3%)
+	}
+	td.#{$className}.rowodd.columnodd {
+		@include cell-color($mainColor, $percent+9%)
+	}
+}
+
+@mixin cell-color($mainColor, $percent) {
+	background-color: lighten($mainColor, $percent);
+	@if lightness(lighten($mainColor, $percent)) > 50% {
+		color: black;
+	}
+	@else {
+		color: white;
+	}
+}
+
+@include baseTable("bluestatsgrid", #000077);
+@include baseTable("redstatsgrid", #770000);
+@include baseTable("greenstatsgrid", #007700);
+
+@include baseTable("greystatsgrid", #333333);
+
+@include baseTable("yellowstatsgrid", #444400);
+@include baseTable("purplestatsgrid", #440044);
+@include baseTable("cyanstatsgrid", #004444);

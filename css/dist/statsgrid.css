@@ -1,0 +1,671 @@
+table.bluestatsgrid td.header.column0 {
+  background-color: #000077;
+  color: white; }
+table.bluestatsgrid td.header.column1 {
+  background-color: #0000aa;
+  color: white; }
+table.bluestatsgrid td.header.column2 {
+  background-color: #0000dd;
+  color: white; }
+table.bluestatsgrid td.header.column3 {
+  background-color: #1111ff;
+  color: black; }
+table.bluestatsgrid td.header.column4 {
+  background-color: #4444ff;
+  color: black; }
+table.bluestatsgrid td.header.row0 {
+  background-color: #000077;
+  color: white; }
+table.bluestatsgrid td.header.row1 {
+  background-color: #0000aa;
+  color: white; }
+table.bluestatsgrid td.header.row2 {
+  background-color: #0000dd;
+  color: white; }
+table.bluestatsgrid td.header.row3 {
+  background-color: #1111ff;
+  color: black; }
+table.bluestatsgrid td.header.row4 {
+  background-color: #4444ff;
+  color: black; }
+table.bluestatsgrid td.header {
+  text-align: center;
+  font-weight: bold; }
+table.bluestatsgrid td.value {
+  text-align: right; }
+table.bluestatsgrid td.value.roweven.columneven {
+  background-color: #c9c9ff;
+  color: black; }
+table.bluestatsgrid td.value.roweven.columnodd {
+  background-color: #e7e7ff;
+  color: black; }
+table.bluestatsgrid td.value.rowodd.columneven {
+  background-color: #d8d8ff;
+  color: black; }
+table.bluestatsgrid td.value.rowodd.columnodd {
+  background-color: #f6f6ff;
+  color: black; }
+table.bluestatsgrid td.aggregate3.roweven.columneven {
+  background-color: #afafff;
+  color: black; }
+table.bluestatsgrid td.aggregate3.roweven.columnodd {
+  background-color: #ceceff;
+  color: black; }
+table.bluestatsgrid td.aggregate3.rowodd.columneven {
+  background-color: #bebeff;
+  color: black; }
+table.bluestatsgrid td.aggregate3.rowodd.columnodd {
+  background-color: #ddddff;
+  color: black; }
+table.bluestatsgrid td.aggregate4.roweven.columneven {
+  background-color: #9696ff;
+  color: black; }
+table.bluestatsgrid td.aggregate4.roweven.columnodd {
+  background-color: #b4b4ff;
+  color: black; }
+table.bluestatsgrid td.aggregate4.rowodd.columneven {
+  background-color: #a5a5ff;
+  color: black; }
+table.bluestatsgrid td.aggregate4.rowodd.columnodd {
+  background-color: #c3c3ff;
+  color: black; }
+table.bluestatsgrid td.aggregate1.roweven.columneven {
+  background-color: #7c7cff;
+  color: black; }
+table.bluestatsgrid td.aggregate1.roweven.columnodd {
+  background-color: #9b9bff;
+  color: black; }
+table.bluestatsgrid td.aggregate1.rowodd.columneven {
+  background-color: #8b8bff;
+  color: black; }
+table.bluestatsgrid td.aggregate1.rowodd.columnodd {
+  background-color: #aaaaff;
+  color: black; }
+table.bluestatsgrid td.aggregate0.roweven.columneven {
+  background-color: #4949ff;
+  color: black; }
+table.bluestatsgrid td.aggregate0.roweven.columnodd {
+  background-color: #6868ff;
+  color: black; }
+table.bluestatsgrid td.aggregate0.rowodd.columneven {
+  background-color: #5858ff;
+  color: black; }
+table.bluestatsgrid td.aggregate0.rowodd.columnodd {
+  background-color: #7777ff;
+  color: black; }
+
+table.redstatsgrid td.header.column0 {
+  background-color: #770000;
+  color: white; }
+table.redstatsgrid td.header.column1 {
+  background-color: #aa0000;
+  color: white; }
+table.redstatsgrid td.header.column2 {
+  background-color: #dd0000;
+  color: white; }
+table.redstatsgrid td.header.column3 {
+  background-color: #ff1111;
+  color: black; }
+table.redstatsgrid td.header.column4 {
+  background-color: #ff4444;
+  color: black; }
+table.redstatsgrid td.header.row0 {
+  background-color: #770000;
+  color: white; }
+table.redstatsgrid td.header.row1 {
+  background-color: #aa0000;
+  color: white; }
+table.redstatsgrid td.header.row2 {
+  background-color: #dd0000;
+  color: white; }
+table.redstatsgrid td.header.row3 {
+  background-color: #ff1111;
+  color: black; }
+table.redstatsgrid td.header.row4 {
+  background-color: #ff4444;
+  color: black; }
+table.redstatsgrid td.header {
+  text-align: center;
+  font-weight: bold; }
+table.redstatsgrid td.value {
+  text-align: right; }
+table.redstatsgrid td.value.roweven.columneven {
+  background-color: #ffc9c9;
+  color: black; }
+table.redstatsgrid td.value.roweven.columnodd {
+  background-color: #ffe7e7;
+  color: black; }
+table.redstatsgrid td.value.rowodd.columneven {
+  background-color: #ffd8d8;
+  color: black; }
+table.redstatsgrid td.value.rowodd.columnodd {
+  background-color: #fff6f6;
+  color: black; }
+table.redstatsgrid td.aggregate3.roweven.columneven {
+  background-color: #ffafaf;
+  color: black; }
+table.redstatsgrid td.aggregate3.roweven.columnodd {
+  background-color: #ffcece;
+  color: black; }
+table.redstatsgrid td.aggregate3.rowodd.columneven {
+  background-color: #ffbebe;
+  color: black; }
+table.redstatsgrid td.aggregate3.rowodd.columnodd {
+  background-color: #ffdddd;
+  color: black; }
+table.redstatsgrid td.aggregate4.roweven.columneven {
+  background-color: #ff9696;
+  color: black; }
+table.redstatsgrid td.aggregate4.roweven.columnodd {
+  background-color: #ffb4b4;
+  color: black; }
+table.redstatsgrid td.aggregate4.rowodd.columneven {
+  background-color: #ffa5a5;
+  color: black; }
+table.redstatsgrid td.aggregate4.rowodd.columnodd {
+  background-color: #ffc3c3;
+  color: black; }
+table.redstatsgrid td.aggregate1.roweven.columneven {
+  background-color: #ff7c7c;
+  color: black; }
+table.redstatsgrid td.aggregate1.roweven.columnodd {
+  background-color: #ff9b9b;
+  color: black; }
+table.redstatsgrid td.aggregate1.rowodd.columneven {
+  background-color: #ff8b8b;
+  color: black; }
+table.redstatsgrid td.aggregate1.rowodd.columnodd {
+  background-color: #ffaaaa;
+  color: black; }
+table.redstatsgrid td.aggregate0.roweven.columneven {
+  background-color: #ff4949;
+  color: black; }
+table.redstatsgrid td.aggregate0.roweven.columnodd {
+  background-color: #ff6868;
+  color: black; }
+table.redstatsgrid td.aggregate0.rowodd.columneven {
+  background-color: #ff5858;
+  color: black; }
+table.redstatsgrid td.aggregate0.rowodd.columnodd {
+  background-color: #ff7777;
+  color: black; }
+
+table.greenstatsgrid td.header.column0 {
+  background-color: #007700;
+  color: white; }
+table.greenstatsgrid td.header.column1 {
+  background-color: #00aa00;
+  color: white; }
+table.greenstatsgrid td.header.column2 {
+  background-color: #00dd00;
+  color: white; }
+table.greenstatsgrid td.header.column3 {
+  background-color: #11ff11;
+  color: black; }
+table.greenstatsgrid td.header.column4 {
+  background-color: #44ff44;
+  color: black; }
+table.greenstatsgrid td.header.row0 {
+  background-color: #007700;
+  color: white; }
+table.greenstatsgrid td.header.row1 {
+  background-color: #00aa00;
+  color: white; }
+table.greenstatsgrid td.header.row2 {
+  background-color: #00dd00;
+  color: white; }
+table.greenstatsgrid td.header.row3 {
+  background-color: #11ff11;
+  color: black; }
+table.greenstatsgrid td.header.row4 {
+  background-color: #44ff44;
+  color: black; }
+table.greenstatsgrid td.header {
+  text-align: center;
+  font-weight: bold; }
+table.greenstatsgrid td.value {
+  text-align: right; }
+table.greenstatsgrid td.value.roweven.columneven {
+  background-color: #c9ffc9;
+  color: black; }
+table.greenstatsgrid td.value.roweven.columnodd {
+  background-color: #e7ffe7;
+  color: black; }
+table.greenstatsgrid td.value.rowodd.columneven {
+  background-color: #d8ffd8;
+  color: black; }
+table.greenstatsgrid td.value.rowodd.columnodd {
+  background-color: #f6fff6;
+  color: black; }
+table.greenstatsgrid td.aggregate3.roweven.columneven {
+  background-color: #afffaf;
+  color: black; }
+table.greenstatsgrid td.aggregate3.roweven.columnodd {
+  background-color: #ceffce;
+  color: black; }
+table.greenstatsgrid td.aggregate3.rowodd.columneven {
+  background-color: #beffbe;
+  color: black; }
+table.greenstatsgrid td.aggregate3.rowodd.columnodd {
+  background-color: #ddffdd;
+  color: black; }
+table.greenstatsgrid td.aggregate4.roweven.columneven {
+  background-color: #96ff96;
+  color: black; }
+table.greenstatsgrid td.aggregate4.roweven.columnodd {
+  background-color: #b4ffb4;
+  color: black; }
+table.greenstatsgrid td.aggregate4.rowodd.columneven {
+  background-color: #a5ffa5;
+  color: black; }
+table.greenstatsgrid td.aggregate4.rowodd.columnodd {
+  background-color: #c3ffc3;
+  color: black; }
+table.greenstatsgrid td.aggregate1.roweven.columneven {
+  background-color: #7cff7c;
+  color: black; }
+table.greenstatsgrid td.aggregate1.roweven.columnodd {
+  background-color: #9bff9b;
+  color: black; }
+table.greenstatsgrid td.aggregate1.rowodd.columneven {
+  background-color: #8bff8b;
+  color: black; }
+table.greenstatsgrid td.aggregate1.rowodd.columnodd {
+  background-color: #aaffaa;
+  color: black; }
+table.greenstatsgrid td.aggregate0.roweven.columneven {
+  background-color: #49ff49;
+  color: black; }
+table.greenstatsgrid td.aggregate0.roweven.columnodd {
+  background-color: #68ff68;
+  color: black; }
+table.greenstatsgrid td.aggregate0.rowodd.columneven {
+  background-color: #58ff58;
+  color: black; }
+table.greenstatsgrid td.aggregate0.rowodd.columnodd {
+  background-color: #77ff77;
+  color: black; }
+
+table.greystatsgrid td.header.column0 {
+  background-color: #333333;
+  color: white; }
+table.greystatsgrid td.header.column1 {
+  background-color: #4d4d4d;
+  color: white; }
+table.greystatsgrid td.header.column2 {
+  background-color: #666666;
+  color: white; }
+table.greystatsgrid td.header.column3 {
+  background-color: gray;
+  color: white; }
+table.greystatsgrid td.header.column4 {
+  background-color: #999999;
+  color: black; }
+table.greystatsgrid td.header.row0 {
+  background-color: #333333;
+  color: white; }
+table.greystatsgrid td.header.row1 {
+  background-color: #4d4d4d;
+  color: white; }
+table.greystatsgrid td.header.row2 {
+  background-color: #666666;
+  color: white; }
+table.greystatsgrid td.header.row3 {
+  background-color: gray;
+  color: white; }
+table.greystatsgrid td.header.row4 {
+  background-color: #999999;
+  color: black; }
+table.greystatsgrid td.header {
+  text-align: center;
+  font-weight: bold; }
+table.greystatsgrid td.value {
+  text-align: right; }
+table.greystatsgrid td.value.roweven.columneven {
+  background-color: #dbdbdb;
+  color: black; }
+table.greystatsgrid td.value.roweven.columnodd {
+  background-color: #ebebeb;
+  color: black; }
+table.greystatsgrid td.value.rowodd.columneven {
+  background-color: #e3e3e3;
+  color: black; }
+table.greystatsgrid td.value.rowodd.columnodd {
+  background-color: #f2f2f2;
+  color: black; }
+table.greystatsgrid td.aggregate3.roweven.columneven {
+  background-color: #cfcfcf;
+  color: black; }
+table.greystatsgrid td.aggregate3.roweven.columnodd {
+  background-color: #dedede;
+  color: black; }
+table.greystatsgrid td.aggregate3.rowodd.columneven {
+  background-color: #d6d6d6;
+  color: black; }
+table.greystatsgrid td.aggregate3.rowodd.columnodd {
+  background-color: #e6e6e6;
+  color: black; }
+table.greystatsgrid td.aggregate4.roweven.columneven {
+  background-color: #c2c2c2;
+  color: black; }
+table.greystatsgrid td.aggregate4.roweven.columnodd {
+  background-color: #d1d1d1;
+  color: black; }
+table.greystatsgrid td.aggregate4.rowodd.columneven {
+  background-color: #c9c9c9;
+  color: black; }
+table.greystatsgrid td.aggregate4.rowodd.columnodd {
+  background-color: #d9d9d9;
+  color: black; }
+table.greystatsgrid td.aggregate1.roweven.columneven {
+  background-color: #b5b5b5;
+  color: black; }
+table.greystatsgrid td.aggregate1.roweven.columnodd {
+  background-color: #c4c4c4;
+  color: black; }
+table.greystatsgrid td.aggregate1.rowodd.columneven {
+  background-color: #bdbdbd;
+  color: black; }
+table.greystatsgrid td.aggregate1.rowodd.columnodd {
+  background-color: #cccccc;
+  color: black; }
+table.greystatsgrid td.aggregate0.roweven.columneven {
+  background-color: #9c9c9c;
+  color: black; }
+table.greystatsgrid td.aggregate0.roweven.columnodd {
+  background-color: #ababab;
+  color: black; }
+table.greystatsgrid td.aggregate0.rowodd.columneven {
+  background-color: #a3a3a3;
+  color: black; }
+table.greystatsgrid td.aggregate0.rowodd.columnodd {
+  background-color: #b3b3b3;
+  color: black; }
+
+table.yellowstatsgrid td.header.column0 {
+  background-color: #444400;
+  color: white; }
+table.yellowstatsgrid td.header.column1 {
+  background-color: #777700;
+  color: white; }
+table.yellowstatsgrid td.header.column2 {
+  background-color: #aaaa00;
+  color: white; }
+table.yellowstatsgrid td.header.column3 {
+  background-color: #dddd00;
+  color: white; }
+table.yellowstatsgrid td.header.column4 {
+  background-color: #ffff11;
+  color: black; }
+table.yellowstatsgrid td.header.row0 {
+  background-color: #444400;
+  color: white; }
+table.yellowstatsgrid td.header.row1 {
+  background-color: #777700;
+  color: white; }
+table.yellowstatsgrid td.header.row2 {
+  background-color: #aaaa00;
+  color: white; }
+table.yellowstatsgrid td.header.row3 {
+  background-color: #dddd00;
+  color: white; }
+table.yellowstatsgrid td.header.row4 {
+  background-color: #ffff11;
+  color: black; }
+table.yellowstatsgrid td.header {
+  text-align: center;
+  font-weight: bold; }
+table.yellowstatsgrid td.value {
+  text-align: right; }
+table.yellowstatsgrid td.value.roweven.columneven {
+  background-color: #ffff96;
+  color: black; }
+table.yellowstatsgrid td.value.roweven.columnodd {
+  background-color: #ffffb4;
+  color: black; }
+table.yellowstatsgrid td.value.rowodd.columneven {
+  background-color: #ffffa5;
+  color: black; }
+table.yellowstatsgrid td.value.rowodd.columnodd {
+  background-color: #ffffc3;
+  color: black; }
+table.yellowstatsgrid td.aggregate3.roweven.columneven {
+  background-color: #ffff7c;
+  color: black; }
+table.yellowstatsgrid td.aggregate3.roweven.columnodd {
+  background-color: #ffff9b;
+  color: black; }
+table.yellowstatsgrid td.aggregate3.rowodd.columneven {
+  background-color: #ffff8b;
+  color: black; }
+table.yellowstatsgrid td.aggregate3.rowodd.columnodd {
+  background-color: #ffffaa;
+  color: black; }
+table.yellowstatsgrid td.aggregate4.roweven.columneven {
+  background-color: #ffff63;
+  color: black; }
+table.yellowstatsgrid td.aggregate4.roweven.columnodd {
+  background-color: #ffff81;
+  color: black; }
+table.yellowstatsgrid td.aggregate4.rowodd.columneven {
+  background-color: #ffff72;
+  color: black; }
+table.yellowstatsgrid td.aggregate4.rowodd.columnodd {
+  background-color: #ffff91;
+  color: black; }
+table.yellowstatsgrid td.aggregate1.roweven.columneven {
+  background-color: #ffff49;
+  color: black; }
+table.yellowstatsgrid td.aggregate1.roweven.columnodd {
+  background-color: #ffff68;
+  color: black; }
+table.yellowstatsgrid td.aggregate1.rowodd.columneven {
+  background-color: #ffff58;
+  color: black; }
+table.yellowstatsgrid td.aggregate1.rowodd.columnodd {
+  background-color: #ffff77;
+  color: black; }
+table.yellowstatsgrid td.aggregate0.roweven.columneven {
+  background-color: #ffff16;
+  color: black; }
+table.yellowstatsgrid td.aggregate0.roweven.columnodd {
+  background-color: #ffff35;
+  color: black; }
+table.yellowstatsgrid td.aggregate0.rowodd.columneven {
+  background-color: #ffff25;
+  color: black; }
+table.yellowstatsgrid td.aggregate0.rowodd.columnodd {
+  background-color: #ffff44;
+  color: black; }
+
+table.purplestatsgrid td.header.column0 {
+  background-color: #440044;
+  color: white; }
+table.purplestatsgrid td.header.column1 {
+  background-color: #770077;
+  color: white; }
+table.purplestatsgrid td.header.column2 {
+  background-color: #aa00aa;
+  color: white; }
+table.purplestatsgrid td.header.column3 {
+  background-color: #dd00dd;
+  color: white; }
+table.purplestatsgrid td.header.column4 {
+  background-color: #ff11ff;
+  color: black; }
+table.purplestatsgrid td.header.row0 {
+  background-color: #440044;
+  color: white; }
+table.purplestatsgrid td.header.row1 {
+  background-color: #770077;
+  color: white; }
+table.purplestatsgrid td.header.row2 {
+  background-color: #aa00aa;
+  color: white; }
+table.purplestatsgrid td.header.row3 {
+  background-color: #dd00dd;
+  color: white; }
+table.purplestatsgrid td.header.row4 {
+  background-color: #ff11ff;
+  color: black; }
+table.purplestatsgrid td.header {
+  text-align: center;
+  font-weight: bold; }
+table.purplestatsgrid td.value {
+  text-align: right; }
+table.purplestatsgrid td.value.roweven.columneven {
+  background-color: #ff96ff;
+  color: black; }
+table.purplestatsgrid td.value.roweven.columnodd {
+  background-color: #ffb4ff;
+  color: black; }
+table.purplestatsgrid td.value.rowodd.columneven {
+  background-color: #ffa5ff;
+  color: black; }
+table.purplestatsgrid td.value.rowodd.columnodd {
+  background-color: #ffc3ff;
+  color: black; }
+table.purplestatsgrid td.aggregate3.roweven.columneven {
+  background-color: #ff7cff;
+  color: black; }
+table.purplestatsgrid td.aggregate3.roweven.columnodd {
+  background-color: #ff9bff;
+  color: black; }
+table.purplestatsgrid td.aggregate3.rowodd.columneven {
+  background-color: #ff8bff;
+  color: black; }
+table.purplestatsgrid td.aggregate3.rowodd.columnodd {
+  background-color: #ffaaff;
+  color: black; }
+table.purplestatsgrid td.aggregate4.roweven.columneven {
+  background-color: #ff63ff;
+  color: black; }
+table.purplestatsgrid td.aggregate4.roweven.columnodd {
+  background-color: #ff81ff;
+  color: black; }
+table.purplestatsgrid td.aggregate4.rowodd.columneven {
+  background-color: #ff72ff;
+  color: black; }
+table.purplestatsgrid td.aggregate4.rowodd.columnodd {
+  background-color: #ff91ff;
+  color: black; }
+table.purplestatsgrid td.aggregate1.roweven.columneven {
+  background-color: #ff49ff;
+  color: black; }
+table.purplestatsgrid td.aggregate1.roweven.columnodd {
+  background-color: #ff68ff;
+  color: black; }
+table.purplestatsgrid td.aggregate1.rowodd.columneven {
+  background-color: #ff58ff;
+  color: black; }
+table.purplestatsgrid td.aggregate1.rowodd.columnodd {
+  background-color: #ff77ff;
+  color: black; }
+table.purplestatsgrid td.aggregate0.roweven.columneven {
+  background-color: #ff16ff;
+  color: black; }
+table.purplestatsgrid td.aggregate0.roweven.columnodd {
+  background-color: #ff35ff;
+  color: black; }
+table.purplestatsgrid td.aggregate0.rowodd.columneven {
+  background-color: #ff25ff;
+  color: black; }
+table.purplestatsgrid td.aggregate0.rowodd.columnodd {
+  background-color: #ff44ff;
+  color: black; }
+
+table.cyanstatsgrid td.header.column0 {
+  background-color: #004444;
+  color: white; }
+table.cyanstatsgrid td.header.column1 {
+  background-color: #007777;
+  color: white; }
+table.cyanstatsgrid td.header.column2 {
+  background-color: #00aaaa;
+  color: white; }
+table.cyanstatsgrid td.header.column3 {
+  background-color: #00dddd;
+  color: white; }
+table.cyanstatsgrid td.header.column4 {
+  background-color: #11ffff;
+  color: black; }
+table.cyanstatsgrid td.header.row0 {
+  background-color: #004444;
+  color: white; }
+table.cyanstatsgrid td.header.row1 {
+  background-color: #007777;
+  color: white; }
+table.cyanstatsgrid td.header.row2 {
+  background-color: #00aaaa;
+  color: white; }
+table.cyanstatsgrid td.header.row3 {
+  background-color: #00dddd;
+  color: white; }
+table.cyanstatsgrid td.header.row4 {
+  background-color: #11ffff;
+  color: black; }
+table.cyanstatsgrid td.header {
+  text-align: center;
+  font-weight: bold; }
+table.cyanstatsgrid td.value {
+  text-align: right; }
+table.cyanstatsgrid td.value.roweven.columneven {
+  background-color: #96ffff;
+  color: black; }
+table.cyanstatsgrid td.value.roweven.columnodd {
+  background-color: #b4ffff;
+  color: black; }
+table.cyanstatsgrid td.value.rowodd.columneven {
+  background-color: #a5ffff;
+  color: black; }
+table.cyanstatsgrid td.value.rowodd.columnodd {
+  background-color: #c3ffff;
+  color: black; }
+table.cyanstatsgrid td.aggregate3.roweven.columneven {
+  background-color: #7cffff;
+  color: black; }
+table.cyanstatsgrid td.aggregate3.roweven.columnodd {
+  background-color: #9bffff;
+  color: black; }
+table.cyanstatsgrid td.aggregate3.rowodd.columneven {
+  background-color: #8bffff;
+  color: black; }
+table.cyanstatsgrid td.aggregate3.rowodd.columnodd {
+  background-color: #aaffff;
+  color: black; }
+table.cyanstatsgrid td.aggregate4.roweven.columneven {
+  background-color: #63ffff;
+  color: black; }
+table.cyanstatsgrid td.aggregate4.roweven.columnodd {
+  background-color: #81ffff;
+  color: black; }
+table.cyanstatsgrid td.aggregate4.rowodd.columneven {
+  background-color: #72ffff;
+  color: black; }
+table.cyanstatsgrid td.aggregate4.rowodd.columnodd {
+  background-color: #91ffff;
+  color: black; }
+table.cyanstatsgrid td.aggregate1.roweven.columneven {
+  background-color: #49ffff;
+  color: black; }
+table.cyanstatsgrid td.aggregate1.roweven.columnodd {
+  background-color: #68ffff;
+  color: black; }
+table.cyanstatsgrid td.aggregate1.rowodd.columneven {
+  background-color: #58ffff;
+  color: black; }
+table.cyanstatsgrid td.aggregate1.rowodd.columnodd {
+  background-color: #77ffff;
+  color: black; }
+table.cyanstatsgrid td.aggregate0.roweven.columneven {
+  background-color: #16ffff;
+  color: black; }
+table.cyanstatsgrid td.aggregate0.roweven.columnodd {
+  background-color: #35ffff;
+  color: black; }
+table.cyanstatsgrid td.aggregate0.rowodd.columneven {
+  background-color: #25ffff;
+  color: black; }
+table.cyanstatsgrid td.aggregate0.rowodd.columnodd {
+  background-color: #44ffff;
+  color: black; }
