@@ -169,6 +169,12 @@ Styling statsgrids:
 Statsgrid comes with a default CSS stylesheet.
 You can find it in *css/dist/statsgrid.css*.
 
+Using composer? Add this to your theme:
+
+```html
+<link rel="stylesheet" type="text/css" href="inc/statsgrid/css/dist/statsgrid.css" />
+```
+
 By default the grid is in blueish tones.
 
 You can change the main CSS class of the grid using:
