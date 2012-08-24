@@ -7,8 +7,13 @@
 
 namespace Mouf\Html\Widgets\StatsGrid;
 
+use Mouf\Html\Widgets\StatsGrid\Aggregate\AggregatorDescriptorInterface;
 use Mouf\Html\HtmlElement\HtmlElementInterface;
 use Mouf\Html\Widgets\StatsGrid\Aggregate;
+use SplObjectStorage;
+use Mouf\Html\Widgets\StatsGrid\Aggregate\AggregatedValue;
+use RecursiveIteratorIterator;
+use Exception;
 
 /**
  * A grid specially tailored at displaying statistics (like a pivot table)

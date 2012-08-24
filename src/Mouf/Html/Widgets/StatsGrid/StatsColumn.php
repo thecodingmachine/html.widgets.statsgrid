@@ -7,6 +7,8 @@
 
 namespace Mouf\Html\Widgets\StatsGrid;
 
+use RecursiveIterator;
+use SplObjectStorage;
 
 /**
  * An actual column or row.

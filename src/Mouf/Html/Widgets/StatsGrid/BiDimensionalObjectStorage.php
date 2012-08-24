@@ -7,6 +7,8 @@
 
 namespace Mouf\Html\Widgets\StatsGrid;
 
+use SplObjectStorage;
+
 /**
  * A bidimensional map whose both keys are objects.
  * This object lets you access an iterator (actually a SplObjectStorage object) representing rows and/or columns.

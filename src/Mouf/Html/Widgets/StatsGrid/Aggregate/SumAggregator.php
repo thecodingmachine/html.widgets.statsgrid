@@ -7,7 +7,8 @@
 
 namespace Mouf\Html\Widgets\StatsGrid\Aggregate;
 
-use Mouf\Html\Widgets\StatsGrid;
+use Mouf\Html\Widgets\StatsGrid\StatsColumnDescriptor;
+use Mouf\Html\Widgets\StatsGrid\StatsValueDescriptor;
 
 /**
  * The most simple aggregator: it performs sums of the values and displays the total.
