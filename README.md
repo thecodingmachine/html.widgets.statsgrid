@@ -5,15 +5,15 @@ StatsGrid is a PHP library that let's you generate HTML pivot tables from any da
 You give the data to be rendered as an array to StatsGrid and it will render the HTML. For instance, you can
 give this array:
 
-$data = array(
-	array("country"=>"US", "city"=>"Chicago", "year"=>2009, "month"=>"February", "CA"=>12, "Benef"=>2),	
-	array("country"=>"US", "city"=>"Chicago", "year"=>2009, "month"=>"April", "CA"=>12, "Benef"=>2),	
-	array("country"=>"US", "city"=>"NY", "year"=>2009, "month"=>"May", "CA"=>15, "Benef"=>5),
-	array("country"=>"US", "city"=>"Baltimore", "year"=>2009, "month"=>"April", "CA"=>42, "Benef"=>3),
-	array("country"=>"US", "city"=>"Baltimore", "year"=>2010, "month"=>"April", "CA"=>24, "Benef"=>4),
-	array("country"=>"FR", "city"=>"Paris", "year"=>2010, "month"=>"May", "CA"=>12, "Benef"=>2),
-	array("country"=>"FR", "city"=>"Paris", "year"=>2010, "month"=>"June", "CA"=>12, "Benef"=>2),	
-);
+	$data = array(
+		array("country"=>"US", "city"=>"Chicago", "year"=>2009, "month"=>"February", "CA"=>12, "Benef"=>2),	
+		array("country"=>"US", "city"=>"Chicago", "year"=>2009, "month"=>"April", "CA"=>12, "Benef"=>2),	
+		array("country"=>"US", "city"=>"NY", "year"=>2009, "month"=>"May", "CA"=>15, "Benef"=>5),
+		array("country"=>"US", "city"=>"Baltimore", "year"=>2009, "month"=>"April", "CA"=>42, "Benef"=>3),
+		array("country"=>"US", "city"=>"Baltimore", "year"=>2010, "month"=>"April", "CA"=>24, "Benef"=>4),
+		array("country"=>"FR", "city"=>"Paris", "year"=>2010, "month"=>"May", "CA"=>12, "Benef"=>2),
+		array("country"=>"FR", "city"=>"Paris", "year"=>2010, "month"=>"June", "CA"=>12, "Benef"=>2),	
+	);
 
 and StatsGrid can generate this kind of reports:
 
