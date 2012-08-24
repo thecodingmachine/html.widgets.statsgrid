@@ -46,6 +46,12 @@ To generate a statsgrid, you need several things:
 Here is a sample code base:
 
 ```php
+// Let's import all required classes
+use Mouf\Html\Widgets\StatsGrid\StatsGrid;
+use Mouf\Html\Widgets\StatsGrid\StatsColumnDescriptor;
+use Mouf\Html\Widgets\StatsGrid\StatsValueDescriptor;
+use Mouf\Html\Widgets\StatsGrid\Aggregate\SumAggregator;
+
 // Let's define the data to be displayed (usually, you will get this from a database using GROUP BY statements)
 $data = array(
 	array("country"=>"US", "city"=>"Chicago", "year"=>2009, "month"=>"February", "sales"=>12, "profit"=>2),	
@@ -57,27 +63,32 @@ $data = array(
 	array("country"=>"FR", "city"=>"Paris", "year"=>2010, "month"=>"June", "sales"=>12, "profit"=>2),	
 );
 
-// Let's create the instance
+// The StatsGrid object is the main object used to display the grid
 $grid = new StatsGrid();
-// We define 2 rows: COUNTRY and CITY
-$grid->setRows(array(
-	new StatsColumnDescriptor("country"),	
-	new StatsColumnDescriptor("city")	
-));
-// We define 2 columns: YEAR and MONTHS
-$grid->setColumns(array(
-		new StatsColumnDescriptor("year"),
-		new StatsColumnDescriptor("month")
-));
-// We define 2 values: CA and Benef
-$grid->setValues(array(
-	new StatsValueDescriptor("CA", "CA"),
-	new StatsValueDescriptor("Benef", "Be."),		
-));
-// We set the data
+
+// Let's associate the data to the grid
 $grid->setData($data);
 
-// We print the table
+// Now, let's define 2 row descriptors: COUNTRY and CITY
+$countryRow = new StatsColumnDescriptor("country");
+$cityRow = new StatsColumnDescriptor("city");
+// We associate these column descriptors to the grid
+$grid->addRow($countryRow);
+$grid->addRow($cityRow);
+
+
+// Now, let's define 2 column descriptors: YEAR and MONTH
+$yearColumn = new StatsColumnDescriptor("year");
+$monthColumn = new StatsColumnDescriptor("month");
+// We associate these column descriptors to the grid
+$grid->addColumn($yearColumn);
+$grid->addColumn($monthColumn);
+
+// Let's define the values to be displayed in the table
+$salesValue = new StatsValueDescriptor("sales", "Sales");
+$grid->addValue($salesValue);
+
+// Finally, let's print the table
 $grid->toHtml();
 ```
 
@@ -125,6 +136,32 @@ By just adding those 4 lines, we will get this:
 </tr><tr>
 <td class='header row0'>Total Sales</td><td></td><td class='aggregate0 value roweven columneven'>12</td><td class='aggregate0 value rowodd columneven'>54</td><td class='aggregate0 value roweven columneven'>15</td><td class='aggregate1 value rowodd columneven'>81</td><td class='aggregate0 value roweven columneven'>24</td><td class='aggregate0 value rowodd columneven'>12</td><td class='aggregate0 value roweven columneven'>12</td><td class='aggregate1 value rowodd columneven'>48</td><td class='aggregate0 value roweven columneven'>129</td>
 </tr></table>
+
+Displaying several values:
+--------------------------
+
+If you look at the dataset we have been working on, we have 2 sets of values: "sales" and "profit".
+So far, we have been displaying only the "sales" value. However, stats grid can perfectly handle displaying 2 values next to each other.
+
+For instance, you could write:
+
+```php
+// Let's define the values to be displayed in the table
+$salesValue = new StatsValueDescriptor("sales", "Sales");
+$profitValue = new StatsValueDescriptor("profit", "Prof.");
+$grid->addValue($salesValue);
+$grid->addValue($profitValue);
+```
+
+This will displays The 2 values in 2 columns.
+If you want values to be displayed in rows rather in column, just add:
+
+```php
+// There are several value descriptor, let's put those in rows.
+$grid->setValuesDisplayMode(StatsGrid::VALUES_DISPLAY_VERTICAL);
+```
+
+
 
 Styling statsgrids:
 -------------------
