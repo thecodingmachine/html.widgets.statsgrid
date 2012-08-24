@@ -6,32 +6,32 @@ You give the data to be rendered as an array to StatsGrid and it will render the
 give this array:
 
 	$data = array(
-		array("country"=>"US", "city"=>"Chicago", "year"=>2009, "month"=>"February", "CA"=>12, "Benef"=>2),	
-		array("country"=>"US", "city"=>"Chicago", "year"=>2009, "month"=>"April", "CA"=>12, "Benef"=>2),	
-		array("country"=>"US", "city"=>"NY", "year"=>2009, "month"=>"May", "CA"=>15, "Benef"=>5),
-		array("country"=>"US", "city"=>"Baltimore", "year"=>2009, "month"=>"April", "CA"=>42, "Benef"=>3),
-		array("country"=>"US", "city"=>"Baltimore", "year"=>2010, "month"=>"April", "CA"=>24, "Benef"=>4),
-		array("country"=>"FR", "city"=>"Paris", "year"=>2010, "month"=>"May", "CA"=>12, "Benef"=>2),
-		array("country"=>"FR", "city"=>"Paris", "year"=>2010, "month"=>"June", "CA"=>12, "Benef"=>2),	
+		array("country"=>"US", "city"=>"Chicago", "year"=>2009, "month"=>"February", "sales"=>12, "profit"=>2),	
+		array("country"=>"US", "city"=>"Chicago", "year"=>2009, "month"=>"April", "sales"=>12, "profit"=>2),	
+		array("country"=>"US", "city"=>"NY", "year"=>2009, "month"=>"May", "sales"=>15, "profit"=>5),
+		array("country"=>"US", "city"=>"Baltimore", "year"=>2009, "month"=>"April", "sales"=>42, "profit"=>3),
+		array("country"=>"US", "city"=>"Baltimore", "year"=>2010, "month"=>"April", "sales"=>24, "profit"=>4),
+		array("country"=>"FR", "city"=>"Paris", "year"=>2010, "month"=>"May", "sales"=>12, "profit"=>2),
+		array("country"=>"FR", "city"=>"Paris", "year"=>2010, "month"=>"June", "sales"=>12, "profit"=>2),	
 	);
-
+	
 and StatsGrid can generate this kind of reports:
 
-<table><tr>
-<td></td><td></td><td colspan='6'>2009</td><td colspan='6'>2010</td>
+<table class='bluestatsgrid'><tr>
+<td></td><td></td><td colspan='6' class='header column0'>2009</td><td colspan='6' class='header column0'>2010</td>
 </tr><tr>
-<td></td><td></td><td colspan='2'>February</td><td colspan='2'>April</td><td colspan='2'>May</td><td colspan='2'>April</td><td colspan='2'>May</td><td colspan='2'>June</td>
+<td></td><td></td><td colspan='2' class='header column1'>February</td><td colspan='2' class='header column1'>April</td><td colspan='2' class='header column1'>May</td><td colspan='2' class='header column1'>April</td><td colspan='2' class='header column1'>May</td><td colspan='2' class='header column1'>June</td>
 </tr><tr>
-<td></td><td></td><td>CA</td><td>Be.</td><td>CA</td><td>Be.</td><td>CA</td><td>Be.</td><td>CA</td><td>Be.</td><td>CA</td><td>Be.</td><td>CA</td><td>Be.</td>
+<td></td><td></td><td class='header column2'>Sales</td><td class='header column2'>Prof.</td><td class='header column2'>Sales</td><td class='header column2'>Prof.</td><td class='header column2'>Sales</td><td class='header column2'>Prof.</td><td class='header column2'>Sales</td><td class='header column2'>Prof.</td><td class='header column2'>Sales</td><td class='header column2'>Prof.</td><td class='header column2'>Sales</td><td class='header column2'>Prof.</td>
 </tr><tr>
-<td rowspan='3'>US</td><td>Chicago</td><td>12</td><td>2</td><td>12</td><td>2</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+<td rowspan='3' class='header row0'>US</td><td class='header row1'>Chicago</td><td class='value roweven columnodd'>12</td><td class='value rowodd columnodd'>2</td><td class='value roweven columnodd'>12</td><td class='value rowodd columnodd'>2</td><td class='value roweven columnodd'></td><td class='value rowodd columnodd'></td><td class='value roweven columnodd'></td><td class='value rowodd columnodd'></td><td class='value roweven columnodd'></td><td class='value rowodd columnodd'></td><td class='value roweven columnodd'></td><td class='value rowodd columnodd'></td>
 </tr><tr>
-<td>NY</td><td></td><td></td><td></td><td></td><td>15</td><td>5</td><td></td><td></td><td></td><td></td><td></td><td></td>
+<td class='header row1'>NY</td><td class='value roweven columneven'></td><td class='value rowodd columneven'></td><td class='value roweven columneven'></td><td class='value rowodd columneven'></td><td class='value roweven columneven'>15</td><td class='value rowodd columneven'>5</td><td class='value roweven columneven'></td><td class='value rowodd columneven'></td><td class='value roweven columneven'></td><td class='value rowodd columneven'></td><td class='value roweven columneven'></td><td class='value rowodd columneven'></td>
 </tr><tr>
-<td>Baltimore</td><td></td><td></td><td>42</td><td>3</td><td></td><td></td><td>24</td><td>4</td><td></td><td></td><td></td><td></td>
+<td class='header row1'>Baltimore</td><td class='value roweven columnodd'></td><td class='value rowodd columnodd'></td><td class='value roweven columnodd'>42</td><td class='value rowodd columnodd'>3</td><td class='value roweven columnodd'></td><td class='value rowodd columnodd'></td><td class='value roweven columnodd'>24</td><td class='value rowodd columnodd'>4</td><td class='value roweven columnodd'></td><td class='value rowodd columnodd'></td><td class='value roweven columnodd'></td><td class='value rowodd columnodd'></td>
 </tr><tr>
-<td>FR</td><td>Paris</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>12</td><td>2</td><td>12</td><td>2</td>
-</tr></table> 
+<td class='header row0'>FR</td><td class='header row1'>Paris</td><td class='value roweven columneven'></td><td class='value rowodd columneven'></td><td class='value roweven columneven'></td><td class='value rowodd columneven'></td><td class='value roweven columneven'></td><td class='value rowodd columneven'></td><td class='value roweven columneven'></td><td class='value rowodd columneven'></td><td class='value roweven columneven'>12</td><td class='value rowodd columneven'>2</td><td class='value roweven columneven'>12</td><td class='value rowodd columneven'>2</td>
+</tr></table>
 
 Usage sample:
 -------------
