@@ -17,6 +17,103 @@ give this array:
 	
 and StatsGrid can generate this kind of reports:
 
+<style>
+table.bluestatsgrid td.header.column0 {
+  background-color: #000077;
+  color: white; }
+table.bluestatsgrid td.header.column1 {
+  background-color: #0000aa;
+  color: white; }
+table.bluestatsgrid td.header.column2 {
+  background-color: #0000dd;
+  color: white; }
+table.bluestatsgrid td.header.column3 {
+  background-color: #1111ff;
+  color: black; }
+table.bluestatsgrid td.header.column4 {
+  background-color: #4444ff;
+  color: black; }
+table.bluestatsgrid td.header.row0 {
+  background-color: #000077;
+  color: white; }
+table.bluestatsgrid td.header.row1 {
+  background-color: #0000aa;
+  color: white; }
+table.bluestatsgrid td.header.row2 {
+  background-color: #0000dd;
+  color: white; }
+table.bluestatsgrid td.header.row3 {
+  background-color: #1111ff;
+  color: black; }
+table.bluestatsgrid td.header.row4 {
+  background-color: #4444ff;
+  color: black; }
+table.bluestatsgrid td.header {
+  text-align: center;
+  font-weight: bold; }
+table.bluestatsgrid td.value {
+  text-align: right; }
+table.bluestatsgrid td.value.roweven.columneven {
+  background-color: #c9c9ff;
+  color: black; }
+table.bluestatsgrid td.value.roweven.columnodd {
+  background-color: #e7e7ff;
+  color: black; }
+table.bluestatsgrid td.value.rowodd.columneven {
+  background-color: #d8d8ff;
+  color: black; }
+table.bluestatsgrid td.value.rowodd.columnodd {
+  background-color: #f6f6ff;
+  color: black; }
+table.bluestatsgrid td.aggregate3.roweven.columneven {
+  background-color: #afafff;
+  color: black; }
+table.bluestatsgrid td.aggregate3.roweven.columnodd {
+  background-color: #ceceff;
+  color: black; }
+table.bluestatsgrid td.aggregate3.rowodd.columneven {
+  background-color: #bebeff;
+  color: black; }
+table.bluestatsgrid td.aggregate3.rowodd.columnodd {
+  background-color: #ddddff;
+  color: black; }
+table.bluestatsgrid td.aggregate4.roweven.columneven {
+  background-color: #9696ff;
+  color: black; }
+table.bluestatsgrid td.aggregate4.roweven.columnodd {
+  background-color: #b4b4ff;
+  color: black; }
+table.bluestatsgrid td.aggregate4.rowodd.columneven {
+  background-color: #a5a5ff;
+  color: black; }
+table.bluestatsgrid td.aggregate4.rowodd.columnodd {
+  background-color: #c3c3ff;
+  color: black; }
+table.bluestatsgrid td.aggregate1.roweven.columneven {
+  background-color: #7c7cff;
+  color: black; }
+table.bluestatsgrid td.aggregate1.roweven.columnodd {
+  background-color: #9b9bff;
+  color: black; }
+table.bluestatsgrid td.aggregate1.rowodd.columneven {
+  background-color: #8b8bff;
+  color: black; }
+table.bluestatsgrid td.aggregate1.rowodd.columnodd {
+  background-color: #aaaaff;
+  color: black; }
+table.bluestatsgrid td.aggregate0.roweven.columneven {
+  background-color: #4949ff;
+  color: black; }
+table.bluestatsgrid td.aggregate0.roweven.columnodd {
+  background-color: #6868ff;
+  color: black; }
+table.bluestatsgrid td.aggregate0.rowodd.columneven {
+  background-color: #5858ff;
+  color: black; }
+table.bluestatsgrid td.aggregate0.rowodd.columnodd {
+  background-color: #7777ff;
+  color: black; }
+</style>
 <table class='bluestatsgrid'><tr>
 <td></td><td></td><td colspan='6' class='header column0'>2009</td><td colspan='6' class='header column0'>2010</td>
 </tr><tr>
