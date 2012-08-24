@@ -5,15 +5,17 @@ StatsGrid is a PHP library that let's you generate HTML pivot tables from any da
 You give the data to be rendered as an array to StatsGrid and it will render the HTML. For instance, you can
 give this array:
 
-	$data = array(
-		array("country"=>"US", "city"=>"Chicago", "year"=>2009, "month"=>"February", "sales"=>12, "profit"=>2),	
-		array("country"=>"US", "city"=>"Chicago", "year"=>2009, "month"=>"April", "sales"=>12, "profit"=>2),	
-		array("country"=>"US", "city"=>"NY", "year"=>2009, "month"=>"May", "sales"=>15, "profit"=>5),
-		array("country"=>"US", "city"=>"Baltimore", "year"=>2009, "month"=>"April", "sales"=>42, "profit"=>3),
-		array("country"=>"US", "city"=>"Baltimore", "year"=>2010, "month"=>"April", "sales"=>24, "profit"=>4),
-		array("country"=>"FR", "city"=>"Paris", "year"=>2010, "month"=>"May", "sales"=>12, "profit"=>2),
-		array("country"=>"FR", "city"=>"Paris", "year"=>2010, "month"=>"June", "sales"=>12, "profit"=>2),	
-	);
+```php
+$data = array(
+	array("country"=>"US", "city"=>"Chicago", "year"=>2009, "month"=>"February", "sales"=>12, "profit"=>2),	
+	array("country"=>"US", "city"=>"Chicago", "year"=>2009, "month"=>"April", "sales"=>12, "profit"=>2),	
+	array("country"=>"US", "city"=>"NY", "year"=>2009, "month"=>"May", "sales"=>15, "profit"=>5),
+	array("country"=>"US", "city"=>"Baltimore", "year"=>2009, "month"=>"April", "sales"=>42, "profit"=>3),
+	array("country"=>"US", "city"=>"Baltimore", "year"=>2010, "month"=>"April", "sales"=>24, "profit"=>4),
+	array("country"=>"FR", "city"=>"Paris", "year"=>2010, "month"=>"May", "sales"=>12, "profit"=>2),
+	array("country"=>"FR", "city"=>"Paris", "year"=>2010, "month"=>"June", "sales"=>12, "profit"=>2),	
+);
+```
 	
 and StatsGrid can generate this kind of reports:
 
@@ -46,13 +48,13 @@ Here is a sample code base:
 ```php
 // Let's define the data to be displayed (usually, you will get this from a database using GROUP BY statements)
 $data = array(
-	array("country"=>"US", "city"=>"Chicago", "year"=>2009, "month"=>"February", "CA"=>12, "Benef"=>2),	
-	array("country"=>"US", "city"=>"Chicago", "year"=>2009, "month"=>"April", "CA"=>12, "Benef"=>2),	
-	array("country"=>"US", "city"=>"NY", "year"=>2009, "month"=>"May", "CA"=>15, "Benef"=>5),
-	array("country"=>"US", "city"=>"Baltimore", "year"=>2009, "month"=>"April", "CA"=>42, "Benef"=>3),
-	array("country"=>"US", "city"=>"Baltimore", "year"=>2010, "month"=>"April", "CA"=>24, "Benef"=>4),
-	array("country"=>"FR", "city"=>"Paris", "year"=>2010, "month"=>"May", "CA"=>12, "Benef"=>2),
-	array("country"=>"FR", "city"=>"Paris", "year"=>2010, "month"=>"June", "CA"=>12, "Benef"=>2),	
+	array("country"=>"US", "city"=>"Chicago", "year"=>2009, "month"=>"February", "sales"=>12, "profit"=>2),	
+	array("country"=>"US", "city"=>"Chicago", "year"=>2009, "month"=>"April", "sales"=>12, "profit"=>2),	
+	array("country"=>"US", "city"=>"NY", "year"=>2009, "month"=>"May", "sales"=>15, "profit"=>5),
+	array("country"=>"US", "city"=>"Baltimore", "year"=>2009, "month"=>"April", "sales"=>42, "profit"=>3),
+	array("country"=>"US", "city"=>"Baltimore", "year"=>2010, "month"=>"April", "sales"=>24, "profit"=>4),
+	array("country"=>"FR", "city"=>"Paris", "year"=>2010, "month"=>"May", "sales"=>12, "profit"=>2),
+	array("country"=>"FR", "city"=>"Paris", "year"=>2010, "month"=>"June", "sales"=>12, "profit"=>2),	
 );
 
 // Let's create the instance
@@ -148,4 +150,4 @@ Those are valid CSS classes defined in the statsgrid package:
 - cyanstatsgrid
 
 You can of course provide your own class to suit your needs.
-The *css/src/statsgrid.scss* file contains the [SASS file](http://sass-lang.com/). that has been used to generate those themes easily.
+The *css/src/statsgrid.scss* file contains the [SASS file](http://sass-lang.com/) that has been used to generate those themes easily.
