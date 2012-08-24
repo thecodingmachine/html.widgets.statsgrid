@@ -35,6 +35,14 @@ and StatsGrid can generate this kind of reports:
 <td class='header row0'>FR</td><td class='header row1'>Paris</td><td class='value roweven columneven'></td><td class='value rowodd columneven'></td><td class='value roweven columneven'></td><td class='value rowodd columneven'></td><td class='value roweven columneven'></td><td class='value rowodd columneven'></td><td class='value roweven columneven'></td><td class='value rowodd columneven'></td><td class='value roweven columneven'>12</td><td class='value rowodd columneven'>2</td><td class='value roweven columneven'>12</td><td class='value rowodd columneven'>2</td>
 </tr></table>
 
+Installing StatsGrid:
+---------------------
+
+StatsGrid comes as a composer package.
+
+TODO
+
+
 Usage sample:
 -------------
 
@@ -43,7 +51,9 @@ To generate a statsgrid, you need several things:
 - you will also need a set of row and a set of column descriptors (describing what should be in row and what should be in column)
 - finally, you need to decide what values are to be displayed in the grid
 
-Here is a sample code base:
+StatsGrid is compatible with [Mouf](http://mouf-php.com) so you can completely define a grid using Mouf's graphical interface.
+
+Not using [Mouf](http://mouf-php.com)? You should! Be here is a sample code base anyway:
 
 ```php
 // Let's import all required classes
@@ -172,7 +182,7 @@ You can find it in *css/dist/statsgrid.css*.
 Using composer? Add this to your theme:
 
 ```html
-<link rel="stylesheet" type="text/css" href="inc/statsgrid/css/dist/statsgrid.css" />
+<link rel="stylesheet" type="text/css" href="[myproject]/vendor/mouf/html.widgets.statsgrid/css/dist/statsgrid.css" />
 ```
 
 By default the grid is in blueish tones.
