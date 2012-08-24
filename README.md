@@ -85,6 +85,40 @@ Adding aggregation (sums/means...):
 Presenting data in a pivot table is nice, but often, you will find out you want to display sums or means of the data at the bottom of the table.
 StatsGrid let's you *aggregate* data (performing sums/means...) on any column or any row. This way, you can perform sums / subsums, etc... the way you want.
 
-In order to aggregate data, you just need to call the 
+In order to aggregate data, you just need to call the addAggregator method and pass a valid aggregator object.
 
+	// Let's add 4 aggregators (sub and subsums on columns and on rows)
+	$grid->addAggregator(new SumAggregator($countryRow, $salesValue, "Total Sales"));
+	$grid->addAggregator(new SumAggregator($cityRow, $salesValue, "Total city"));
+	$grid->addAggregator(new SumAggregator($monthColumn, $salesValue, "Total month"));
+	$grid->addAggregator(new SumAggregator($yearColumn, $salesValue, "Total year"));
  
+In the sample above we decide we want to sum data by country/city and year/month.
+Therefore, we create 4 SumAggregator objects.
+For each aggregator we need:
+- The column/row we will be summing upon
+- The object representing the value we will be summing
+- The title of the aggregator
+
+By just adding those 4 lines, we will get this:
+
+<table class='bluestatsgrid'><tr>
+<td></td><td></td><td colspan='4' class='header column0'>2009</td><td colspan='4' class='header column0'>2010</td><td class='header column0'>Total year</td>
+</tr><tr>
+<td></td><td></td><td class='header column1'>February</td><td class='header column1'>April</td><td class='header column1'>May</td><td class='header column1'>Total month</td><td class='header column1'>April</td><td class='header column1'>May</td><td class='header column1'>June</td><td class='header column1'>Total month</td><td></td>
+</tr><tr>
+<td rowspan='4' class='header row0'>US</td><td class='header row1'>Chicago</td><td class='value roweven columneven'>12</td><td class='value rowodd columneven'>12</td><td class='value roweven columneven'></td><td class='aggregate1 value rowodd columneven'>24</td><td class='value roweven columneven'></td><td class='value rowodd columneven'></td><td class='value roweven columneven'></td><td class='aggregate1 value rowodd columneven'>0</td><td class='aggregate0 value roweven columneven'>24</td>
+</tr><tr>
+<td class='header row1'>NY</td><td class='value roweven columnodd'></td><td class='value rowodd columnodd'></td><td class='value roweven columnodd'>15</td><td class='aggregate1 value rowodd columnodd'>15</td><td class='value roweven columnodd'></td><td class='value rowodd columnodd'></td><td class='value roweven columnodd'></td><td class='aggregate1 value rowodd columnodd'>0</td><td class='aggregate0 value roweven columnodd'>15</td>
+</tr><tr>
+<td class='header row1'>Baltimore</td><td class='value roweven columneven'></td><td class='value rowodd columneven'>42</td><td class='value roweven columneven'></td><td class='aggregate1 value rowodd columneven'>42</td><td class='value roweven columneven'>24</td><td class='value rowodd columneven'></td><td class='value roweven columneven'></td><td class='aggregate1 value rowodd columneven'>24</td><td class='aggregate0 value roweven columneven'>66</td>
+</tr><tr>
+<td class='header row1'>Total city</td><td class='aggregate1 value roweven columnodd'>12</td><td class='aggregate1 value rowodd columnodd'>54</td><td class='aggregate1 value roweven columnodd'>15</td><td class='aggregate1 value rowodd columnodd'>81</td><td class='aggregate1 value roweven columnodd'>24</td><td class='aggregate1 value rowodd columnodd'>0</td><td class='aggregate1 value roweven columnodd'>0</td><td class='aggregate1 value rowodd columnodd'>24</td><td class='aggregate0 value roweven columnodd'>105</td>
+</tr><tr>
+<td rowspan='2' class='header row0'>FR</td><td class='header row1'>Paris</td><td class='value roweven columneven'></td><td class='value rowodd columneven'></td><td class='value roweven columneven'></td><td class='aggregate1 value rowodd columneven'>0</td><td class='value roweven columneven'></td><td class='value rowodd columneven'>12</td><td class='value roweven columneven'>12</td><td class='aggregate1 value rowodd columneven'>24</td><td class='aggregate0 value roweven columneven'>24</td>
+</tr><tr>
+<td class='header row1'>Total city</td><td class='aggregate1 value roweven columnodd'>0</td><td class='aggregate1 value rowodd columnodd'>0</td><td class='aggregate1 value roweven columnodd'>0</td><td class='aggregate1 value rowodd columnodd'>0</td><td class='aggregate1 value roweven columnodd'>0</td><td class='aggregate1 value rowodd columnodd'>12</td><td class='aggregate1 value roweven columnodd'>12</td><td class='aggregate1 value rowodd columnodd'>24</td><td class='aggregate0 value roweven columnodd'>24</td>
+</tr><tr>
+<td class='header row0'>Total Sales</td><td></td><td class='aggregate0 value roweven columneven'>12</td><td class='aggregate0 value rowodd columneven'>54</td><td class='aggregate0 value roweven columneven'>15</td><td class='aggregate1 value rowodd columneven'>81</td><td class='aggregate0 value roweven columneven'>24</td><td class='aggregate0 value rowodd columneven'>12</td><td class='aggregate0 value roweven columneven'>12</td><td class='aggregate1 value rowodd columneven'>48</td><td class='aggregate0 value roweven columneven'>129</td>
+</tr></table>
+
