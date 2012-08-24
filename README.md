@@ -128,7 +128,24 @@ Styling statsgrids:
 -------------------
 
 Statsgrid comes with a default CSS stylesheet.
-You can find it in css/dist/statsgrid.css.
+You can find it in *css/dist/statsgrid.css*.
 
+By default the grid is in blueish tones.
 
+You can change the main CSS class of the grid using:
+```php
+// Changes the design of the grid
+$grid->setCssClass("redstatsgrid");
+```
 
+Those are valid CSS classes defined in the statsgrid package:
+- bluestatsgrid
+- redstatsgrid
+- greenstatsgrid
+- greystatsgrid
+- yellowstatsgrid
+- purplestatsgrid
+- cyanstatsgrid
+
+You can of course provide your own class to suit your needs.
+The *css/src/statsgrid.scss* file contains the [SASS file](http://sass-lang.com/). that has been used to generate those themes easily.
