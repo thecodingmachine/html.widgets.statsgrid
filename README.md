@@ -53,7 +53,7 @@ In order to install StatsGrid, all you have to do is [http://getcomposer.org/dow
 
 and finally, run
 
-```json
+```bash
 php composer.phar install
 ```
 
