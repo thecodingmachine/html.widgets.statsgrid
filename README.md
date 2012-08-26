@@ -38,9 +38,24 @@ and StatsGrid can generate this kind of reports:
 Installing StatsGrid:
 ---------------------
 
-StatsGrid comes as a composer package.
+StatsGrid comes as a composer package (the name of the package is *mouf/html.widgets.statsgrid*)
 
-TODO
+In order to install StatsGrid, all you have to do is [http://getcomposer.org/download/](install composer), then create a *composer.json* file at the root of your project:
+
+```json
+{
+    "require": {
+        "mouf/html.widgets.statsgrid": ">=1.0-dev"
+    },
+    "minimum-stability": "dev" 
+}
+```
+
+and finally, run
+
+```json
+php composer.phar install
+```
 
 
 Usage sample:
