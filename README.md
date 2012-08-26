@@ -40,7 +40,15 @@ Installing StatsGrid:
 
 StatsGrid comes as a composer package (the name of the package is *mouf/html.widgets.statsgrid*)
 
-In order to install StatsGrid, all you have to do is [http://getcomposer.org/download/](install composer), then create a *composer.json* file at the root of your project:
+Not used to Composer? The first step is installing Composer. 
+This is essentially a one line process:
+
+```bash
+curl -s https://getcomposer.org/installer | php
+```
+
+Windows users can download the phar file here: [http://getcomposer.org/download/](install composer).
+Then create a *composer.json* file at the root of your project:
 
 ```json
 {
