@@ -79,6 +79,9 @@ StatsGrid is compatible with [Mouf](http://mouf-php.com) so you can completely d
 Not using [Mouf](http://mouf-php.com)? You should! Be here is a sample code base anyway:
 
 ```php
+// Let's load the autoloader
+require 'vendor/autoload.php';
+
 // Let's import all required classes
 use Mouf\Html\Widgets\StatsGrid\StatsGrid;
 use Mouf\Html\Widgets\StatsGrid\StatsColumnDescriptor;
