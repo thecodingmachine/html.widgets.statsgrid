@@ -79,7 +79,7 @@ class StatsColumn implements RecursiveIterator {
 			$values = $rowElem->getDistinctValues($dataset);
 			foreach ($values as $value) {
 				$statColumn = new StatsColumn();
-				$statColumn->value = $value;
+				$statColumn->value = (string) $value;
 				$statColumn->parent = $this;
 				$statColumn->columnDescriptor = $rowElem;
 				if (!empty($rows)) {
