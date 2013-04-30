@@ -76,7 +76,7 @@ To generate a statsgrid, you need several things:
 
 StatsGrid is compatible with [Mouf](http://mouf-php.com) so you can completely define a grid using Mouf's graphical interface.
 
-Not using [Mouf](http://mouf-php.com)? You should! Be here is a sample code base anyway:
+Not using [Mouf](http://mouf-php.com)? You should! But here is a sample code base anyway:
 
 ```php
 // Let's load the autoloader

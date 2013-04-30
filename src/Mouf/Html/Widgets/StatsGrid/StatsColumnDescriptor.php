@@ -49,6 +49,7 @@ class StatsColumnDescriptor implements StatsColumnDescriptorInterface {
 		foreach ($dataset as $row) {
 			$values[$row[$this->key]] = 1;
 		}
+		// Note: warning: with this method, we loose the type of the value (int or string)
 		return array_keys($values);
 	}
 	
@@ -69,7 +70,7 @@ class StatsColumnDescriptor implements StatsColumnDescriptorInterface {
 	 * @param string $value
 	 */
 	public function isFiltered(array $datarow, $value) {
-		if (!isset($datarow[$this->key]) || $datarow[$this->key] !== $value) {
+		if (!isset($datarow[$this->key]) || $datarow[$this->key] != $value) {
 			return false;
 		}
 		return true;
