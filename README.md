@@ -116,6 +116,8 @@ $grid->addRow($cityRow);
 // Now, let's define 2 column descriptors: YEAR and MONTH
 $yearColumn = new StatsColumnDescriptor("year");
 $monthColumn = new StatsColumnDescriptor("month");
+// Do not sort the month column alphabetically (see sorting paragraph below)
+$monthColumn->setSort(false);
 // We associate these column descriptors to the grid
 $grid->addColumn($yearColumn);
 $grid->addColumn($monthColumn);
@@ -197,6 +199,22 @@ If you want values to be displayed in rows rather in column, just add:
 $grid->setValuesDisplayMode(StatsGrid::VALUES_DISPLAY_VERTICAL);
 ```
 
+Sorting columns/rows headers
+----------------------------
+
+In the exemple above, the years are sorted numerically (2009, 2010...)
+However, we might very well want to alter this order. Maybe we want to store the result in reverse order.
+Or maybe we want the result not to be sorted at all (and be displayed in the order of the origin dataset).
+
+For these use case, there is the `setSort` method. This function takes a boolean (`true`|`false`), or
+a callable function that will be called to compare 2 items (just like the `usort` PHP function).
+
+Here is an example to sort the columns in reverse order:
+
+```php
+// Let's sort the YEAR columns in reverse order (2010, 2009...)
+$yearColumn->setSort(function($a, $b) { return  $b-$a; });
+```
 
 
 Styling statsgrids:
