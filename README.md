@@ -53,9 +53,8 @@ Then create a *composer.json* file at the root of your project:
 ```json
 {
     "require": {
-        "mouf/html.widgets.statsgrid": ">=1.0-dev"
-    },
-    "minimum-stability": "dev" 
+        "mouf/html.widgets.statsgrid": "~1.0"
+    }
 }
 ```
 
